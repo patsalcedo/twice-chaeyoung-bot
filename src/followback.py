@@ -15,15 +15,3 @@ def follow_back(api):
         if not follower.following:
             logger.info(f"Following {follower.name}")
             follower.follow() # follow() is an in-built function.
-
-
-def main():
-    api = create_api()
-    while True:
-        follow_back(api)
-        logger.info("Waiting...")
-        time.sleep(60) # follow_back method is called every 60s to check for new followers.
-
-
-if __name__ == "__main__":
-    main()
