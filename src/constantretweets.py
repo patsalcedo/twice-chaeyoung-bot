@@ -1,6 +1,4 @@
-import tweepy
 import logging
-from configapi import create_api
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
