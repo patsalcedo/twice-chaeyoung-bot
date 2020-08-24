@@ -12,7 +12,7 @@ logger = logging.getLogger()
 
 def main():
     api = create_api()
-    # keywords = ["chaeyoung","son chaeyoung", "채영"]
+    # keywords = ["chaeyoung","son chaeyoung"]
     # tweets_listener = FavRetweetListener(api)
     # stream = tweepy.Stream(api.auth, tweets_listener)
     # stream.filter(track=keywords, languages=["en"])
@@ -23,7 +23,7 @@ def main():
         official_acc_updates(api, "misayeon")
         search_chaeyoung(api)
         logger.info("Waiting...")
-        time.sleep(30) # follow_back method is called every 60s to check for new followers.
+        time.sleep(10) # follow_back method is called every 60s to check for new followers.
 
 
 if __name__ == "__main__":
