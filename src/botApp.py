@@ -18,8 +18,9 @@ def main():
     # stream.filter(track=keywords, languages=["en"])
 
     while True:
-        # follow_back(api)
+        follow_back(api)
         official_acc_updates(api, "JYPETWICE")
+        official_acc_updates(api, "JYPETWICE_JAPAN")
         official_acc_updates(api, "misayeon")
         search_chaeyoung(api)
         logger.info("Waiting...")
